@@ -99,40 +99,9 @@ footer { color: #aaa; font-size: 12px; margin-top: 24px; text-align: center; }
   </ol>
 </div>
 
-<div class="card fb">
-  <h2>留言与建议</h2>
-  <div style="font-size:13px;color:#777">看了这个组合有什么想法？欢迎留下你的市场观点或改进建议，会直接送达所有者。</div>
-  <input id="fbName" placeholder="你的称呼（可留空）">
-  <textarea id="fbText" rows="3" placeholder="你的意见或建议……"></textarea>
-  <button onclick="sendFb()">提交</button>
-  <div class="ok" id="fbOk">已收到，感谢反馈！</div>
-  <div class="note" id="fbHint"></div>
-</div>
-
 <div class="disc">免责声明：本页面为量化规则的个人研究演示，所有信号为历史数据回测的规则模拟，<b>不构成任何投资建议</b>；回测不代表未来表现，市场有风险，投资需谨慎。</div>
 <footer>由 Kimi Work 自动生成 · 生成于 2026-10-21 09:36 · 策略 v3.5</footer>
 </div>
-<script>
-const ACCESS_KEY = "";  // Web3Forms access_key（所有者配置后启用在线留言，否则走邮箱）
-async function sendFb() {
-  const t = document.getElementById('fbText').value.trim();
-  if (!t) { document.getElementById('fbHint').textContent = '请先填写内容'; return; }
-  const name = document.getElementById('fbName').value.trim() || '匿名';
-  if (ACCESS_KEY) {
-    try {
-      await fetch('https://api.web3forms.com/submit', {
-        method: 'POST',
-        headers: {'Content-Type': 'application/json', 'Accept': 'application/json'},
-        body: JSON.stringify({access_key: ACCESS_KEY, subject: '量化看板留言',
-          name: name, message: t})
-      });
-      document.getElementById('fbOk').style.display = 'block';
-      document.getElementById('fbText').value = '';
-      return;
-    } catch (e) {}
-  }
-  document.getElementById('fbHint').textContent = '在线留言即将开放，可先微信/邮件把想法直接发给看板所有者。';
-}
-</script>
+
 </body>
 </html>
