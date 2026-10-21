@@ -99,6 +99,13 @@ footer { color: #aaa; font-size: 12px; margin-top: 24px; text-align: center; }
     <tr><td style="font-weight:600">holdout 验证段（2023-01 ~ 今，只验证不选参）</td><td class="num"><b>11.2%</b></td><td class="num"><b>-4.6%</b></td><td class="num"><b>2.04</b></td></tr>
     <tr><td>全样本（2018-11 ~ 今）</td><td class="num">9.1%</td><td class="num">-6.1%</td><td class="num">1.76</td></tr>
     <tr><td>对照：生产 v3.5（同 holdout 段）</td><td class="num">10.7%</td><td class="num">-4.1%</td><td class="num">2.07</td></tr></table>
+  <h3 style="margin-top:16px">可交易工具对照（人民币账户，场内直接可买）</h3>
+  <table style="margin-top:6px"><tr><th>腿</th><th>场内代码</th><th>角色</th></tr>
+    <tr><td><b>E</b> 轮动E腿</td><td>159915.SZ 创业板ETF ／ 510880.SH 红利ETF（每月末按 120 日动量切换强者）</td><td>国内股票弹性</td></tr>
+    <tr><td><b>U</b> 纳指</td><td>513100.SH 纳指ETF（溢价 &gt;2% 时改 270042 场外联接）</td><td>美股成长·弹性</td></tr>
+    <tr><td><b>G</b> 黄金</td><td>518880.SH 黄金ETF</td><td>黄金·避险</td></tr>
+    <tr><td><b>B</b> 国债</td><td>511010.SH 国债ETF（上帽 70%）</td><td>债券承接</td></tr>
+    <tr><td><b>C</b> 现金</td><td>货币基金／逆回购（0 收益假设）</td><td>债券帽溢出承接</td></tr></table>
   <div class="note">v3.6 候选：创业板/红利轮动 + 刹车6/10/15 + 债券帽70% + 波动目标8%。train 7.2%/-6.1%/1.50，全样本 9.1%/-6.1%/1.76。对照现生产 v3.5（holdout 10.7%/-4.1%/2.07）：年化+0.5pp、回撤放宽0.5pp、夏普噪声内打平（差0.03）。N=12 两阶段搜索；引擎经逐日核对与生产 v3.5 完全一致（最大差0.0）。 上线前需 ≥1 个月影子跟踪（2026-10-21 起每日 16:53 留痕，与生产 v3.5 上线同流程）。</div>
 </div>
 
@@ -153,7 +160,7 @@ footer { color: #aaa; font-size: 12px; margin-top: 24px; text-align: center; }
 </div>
 
 <div class="disc">免责声明：本页面为量化规则的个人研究演示，所有信号为历史数据回测的规则模拟，<b>不构成任何投资建议</b>；回测不代表未来表现，市场有风险，投资需谨慎。</div>
-<footer>由 Kimi Work 自动生成 · 生成于 2026-10-21 16:54 · 策略 v3.5</footer>
+<footer>由 Kimi Work 自动生成 · 生成于 2026-10-21 17:14 · 策略 v3.5</footer>
 </div>
 
 </body>
