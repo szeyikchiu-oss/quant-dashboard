@@ -84,12 +84,13 @@ footer { color: #aaa; font-size: 12px; margin-top: 24px; text-align: center; }
 
 <div class="card">
   <h2>全球资产配置研究 · 香港账户（2026-10-21）</h2>
-  <div class="one">静态全球配置打不过战术组合：同一纪律下全球版最好 2.7% / 回撤 -7.6%，现有组合 v3.5 为 8.4% / -4.5%。香港身份的真正价值在<b>汇率分散</b>（港币盯美元、VT 含 40% 非美敞口对冲人民币集中风险）与<b>工具扩容</b>。</div>
-  <table style="margin-top:10px"><tr><th>配置（2014-2026 回测）</th><th>年化</th><th>最大回撤</th><th>夏普</th></tr>
-    <tr><td>G1 全天候静态（VT/IEF/TLT/金/大宗）</td><td class="num">6.6%</td><td class="num">-17.7%</td><td class="num">0.85</td></tr>
-    <tr><td>G5 趋势门+波动目标+回撤刹车</td><td class="num">2.7%</td><td class="num">-7.6%</td><td class="num">0.67</td></tr>
-    <tr><td style="font-weight:600">现有组合 v3.5（对照）</td><td class="num"><b>8.4%</b></td><td class="num"><b>-4.5%</b></td><td class="num"><b>1.78</b></td></tr></table>
-  <div class="note">风险溢价结论：债券腿以中期美债（IEF）为主（长端期限溢价薄）；股票风险溢价靠 VT 全球分散；大宗长期负 carry 不做战略配置。演进方向：把现有引擎升级到全球资产池（v4 候选腿 VT/QQQ/GLD/TLT），双段验证后上线。</div>
+  <div class="one"><b>v4 全球版引擎已双段验证（N=5+1）</b>：纪律搬到 VT/QQQ/GLD/SHV，train 选定 V4.1（波动目标 6%），holdout（2021-今，含 2022 股债双杀）6.4% / 回撤 -3.5% / 夏普 1.64，与现有组合风险调整后打平。<b>50/50 混合：7.1% / 回撤 -3.7%，比两者单跑都浅</b>（相关性 0.57）。香港身份的价值在汇率分散：核心腿 CNY + 卫星腿 USD，VT 含 40% 非美敞口。</div>
+  <table style="margin-top:10px"><tr><th>配置</th><th>年化</th><th>最大回撤</th><th>夏普</th></tr>
+    <tr><td>G1 全天候静态（VT/IEF/TLT/金/大宗，2014-2026）</td><td class="num">6.6%</td><td class="num">-17.7%</td><td class="num">0.85</td></tr>
+    <tr><td>现有组合 v3.5（对照，2018 起）</td><td class="num">8.4%</td><td class="num">-4.5%</td><td class="num">1.78</td></tr>
+    <tr><td style="font-weight:600">v4.1 全球引擎（holdout 2021-今）</td><td class="num">6.4%</td><td class="num"><b>-3.5%</b></td><td class="num">1.64</td></tr>
+    <tr><td style="font-weight:600">50/50 混合（卫星+核心）</td><td class="num"><b>7.1%</b></td><td class="num"><b>-3.7%</b></td><td class="num">—</td></tr></table>
+  <div class="note">风险溢价结论：债券腿以短债/现金（SHV）承接而非长债（期限溢价薄且 B 腿必须无风险）；股票风险溢价靠 VT+QQQ 全球分散；大宗长期负 carry 不做战略配置。升级生产信号前需实盘影子跟踪 ≥1 个月（与 v3.5 上线同流程）。</div>
 </div>
 
 <div class="card">
@@ -114,7 +115,7 @@ footer { color: #aaa; font-size: 12px; margin-top: 24px; text-align: center; }
 </div>
 
 <div class="disc">免责声明：本页面为量化规则的个人研究演示，所有信号为历史数据回测的规则模拟，<b>不构成任何投资建议</b>；回测不代表未来表现，市场有风险，投资需谨慎。</div>
-<footer>由 Kimi Work 自动生成 · 生成于 2026-10-21 11:24 · 策略 v3.5</footer>
+<footer>由 Kimi Work 自动生成 · 生成于 2026-10-21 11:33 · 策略 v3.5</footer>
 </div>
 
 </body>
