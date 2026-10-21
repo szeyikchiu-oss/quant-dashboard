@@ -131,9 +131,7 @@ async function sendFb() {
       return;
     } catch (e) {}
   }
-  const body = encodeURIComponent('称呼：' + name + '\n\n' + t);
-  location.href = 'mailto:YOUR_EMAIL?subject=' + encodeURIComponent('量化看板留言') + '&body=' + body;
-  document.getElementById('fbOk').style.display = 'block';
+  document.getElementById('fbHint').textContent = '在线留言即将开放，可先微信/邮件把想法直接发给看板所有者。';
 }
 </script>
 </body>
