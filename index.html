@@ -100,13 +100,21 @@ footer { color: #aaa; font-size: 12px; margin-top: 24px; text-align: center; }
 </div>
 
 <div class="card">
-  <h2>全球资产配置研究 · 香港账户（2026-10-21）</h2>
-  <div class="one"><b>v4 全球版引擎已双段验证（N=5+1）</b>：纪律搬到 VT/QQQ/GLD/SHV，train 选定 V4.1（波动目标 6%），holdout（2021-今，含 2022 股债双杀）6.4% / 回撤 -3.5% / 夏普 1.64，与现有组合风险调整后打平。<b>50/50 混合：7.1% / 回撤 -3.7%，比两者单跑都浅</b>（相关性 0.57）。香港身份的价值在汇率分散：核心腿 CNY + 卫星腿 USD，VT 含 40% 非美敞口。</div>
-  <table style="margin-top:10px"><tr><th>配置</th><th>年化</th><th>最大回撤</th><th>夏普</th></tr>
-    <tr><td>G1 全天候静态（VT/IEF/TLT/金/大宗，2014-2026）</td><td class="num">6.6%</td><td class="num">-17.7%</td><td class="num">0.85</td></tr>
-    <tr><td>现有组合 v3.5（对照，2018 起）</td><td class="num">8.4%</td><td class="num">-4.5%</td><td class="num">1.78</td></tr>
-    <tr><td style="font-weight:600">v4.1 全球引擎（holdout 2021-今）</td><td class="num">6.4%</td><td class="num"><b>-3.5%</b></td><td class="num">1.64</td></tr>
-    <tr><td style="font-weight:600">50/50 混合（卫星+核心）</td><td class="num"><b>7.1%</b></td><td class="num"><b>-3.7%</b></td><td class="num">—</td></tr></table>
+  <h2>v4.1 全球引擎 · VT/QQQ/GLD/SHV（香港账户，影子验证中，未上线）</h2>
+  <div class="one"><b>v4 全球版引擎已双段验证（N=5+1）</b>：v3.5 完整纪律搬到 VT/QQQ/GLD/SHV，train 选定 V4.1（波动目标 6%），holdout 与现有组合风险调整后打平。<b>50/50 混合：7.1% / 回撤 -3.7%，比两者单跑都浅</b>（相关性 0.57）。香港身份的价值在汇率分散：核心腿 CNY + 卫星腿 USD，VT 含 40% 非美敞口。</div>
+  <div class="stats">
+    <div class="stat"><b>6.4%</b><span>holdout 年化（验证段 2021 起）</span></div>
+    <div class="stat"><b>-3.5%</b><span>holdout 最大回撤</span></div>
+    <div class="stat"><b>1.64</b><span>holdout 夏普</span></div>
+    <div class="stat"><b>1.0001</b><span>影子净值</span></div>
+    <div class="stat"><b>0.0%</b><span>影子当前回撤（2026-10-20）</span></div>
+  </div>
+  <table style="margin-top:10px"><tr><th>口径</th><th>年化</th><th>最大回撤</th><th>夏普</th></tr>
+    <tr><td>train 选参段（2014-10 ~ 2020-12，N=5 候选中选定 V4.1）</td><td class="num">4.1%</td><td class="num">-4.7%</td><td class="num">1.13</td></tr>
+    <tr><td style="font-weight:600">holdout 验证段（2021-01 ~ 今，含 2022 股债双杀）</td><td class="num"><b>6.4%</b></td><td class="num"><b>-3.5%</b></td><td class="num"><b>1.64</b></td></tr>
+    <tr><td>对照：生产 v3.5（2022 起同近段）</td><td class="num">7.8%</td><td class="num">-4.1%</td><td class="num">1.65</td></tr>
+    <tr><td style="font-weight:600">50/50 混合 v3.5 + v4.1（2018 起周频）</td><td class="num"><b>7.1%</b></td><td class="num"><b>-3.7%</b></td><td class="num">—</td></tr>
+    <tr><td>参考：G1 全天候静态（VT/IEF/TLT/金/大宗，2014-2026）</td><td class="num">6.6%</td><td class="num">-17.7%</td><td class="num">0.85</td></tr></table>
   <h3 style="margin-top:16px">可交易工具对照（香港券商，美元柜台直接可买）</h3>
   <table style="margin-top:6px"><tr><th>腿</th><th>美股代码（推荐）</th><th>港股替代</th><th>备注</th></tr>
     <tr><td><b>VT</b> 全球股票</td><td>VT · Vanguard 全世界股票ETF · NYSE Arca · 费率0.07%</td><td>无对应ETF</td><td>含约40%非美市场敞口</td></tr>
@@ -139,7 +147,7 @@ footer { color: #aaa; font-size: 12px; margin-top: 24px; text-align: center; }
 </div>
 
 <div class="disc">免责声明：本页面为量化规则的个人研究演示，所有信号为历史数据回测的规则模拟，<b>不构成任何投资建议</b>；回测不代表未来表现，市场有风险，投资需谨慎。</div>
-<footer>由 Kimi Work 自动生成 · 生成于 2026-10-21 16:28 · 策略 v3.5</footer>
+<footer>由 Kimi Work 自动生成 · 生成于 2026-10-21 16:49 · 策略 v3.5</footer>
 </div>
 
 </body>
