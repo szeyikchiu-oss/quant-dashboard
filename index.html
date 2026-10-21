@@ -82,6 +82,24 @@ footer { color: #aaa; font-size: 12px; margin-top: 24px; text-align: center; }
 </div>
 
 <div class="card">
+  <h2>v3.6 夏普优先候选 · 创业板/红利轮动（影子验证中，未上线）</h2>
+  <div class="one"><b>苏斌老师意见（2026-10-21）</b>：创业板ETF/红利ETF 按 120 日动量月度轮动、替换中证500 腿；回撤刹车放宽至 6/10/15（原 3/5/7）；债券上帽 70%（超出部分持现金）；波动目标 8% 不变。</div>
+  <div class="stats">
+    <div class="stat"><b>11.2%</b><span>holdout 年化（验证段 2023 起）</span></div>
+    <div class="stat"><b>-4.6%</b><span>holdout 最大回撤</span></div>
+    <div class="stat"><b>2.04</b><span>holdout 夏普</span></div>
+    <div class="stat"><b>1.9936</b><span>回测轨道期末净值</span></div>
+    <div class="stat"><b>-1.2%</b><span>轨道当前回撤（2026-10-20）</span></div>
+  </div>
+  <table style="margin-top:10px"><tr><th>口径</th><th>年化</th><th>最大回撤</th><th>夏普</th></tr>
+    <tr><td>train 选参段（2018-11 ~ 2022-12）</td><td class="num">7.2%</td><td class="num">-6.1%</td><td class="num">1.50</td></tr>
+    <tr><td style="font-weight:600">holdout 验证段（2023-01 ~ 今，只验证不选参）</td><td class="num"><b>11.2%</b></td><td class="num"><b>-4.6%</b></td><td class="num"><b>2.04</b></td></tr>
+    <tr><td>全样本（2018-11 ~ 今）</td><td class="num">9.1%</td><td class="num">-6.1%</td><td class="num">1.76</td></tr>
+    <tr><td>对照：生产 v3.5（同 holdout 段）</td><td class="num">10.7%</td><td class="num">-4.1%</td><td class="num">2.07</td></tr></table>
+  <div class="note">v3.6 候选：创业板/红利轮动 + 刹车6/10/15 + 债券帽70% + 波动目标8%。train 7.2%/-6.1%/1.50，全样本 9.1%/-6.1%/1.76。对照现生产 v3.5（holdout 10.7%/-4.1%/2.07）：年化+0.5pp、回撤放宽0.5pp、夏普噪声内打平（差0.03）。N=12 两阶段搜索；引擎经逐日核对与生产 v3.5 完全一致（最大差0.0）。 上线前需 ≥1 个月影子跟踪（2026-10-21 起每日 16:53 留痕，与生产 v3.5 上线同流程）。</div>
+</div>
+
+<div class="card">
   <h2>全球资产配置研究 · 香港账户（2026-10-21）</h2>
   <div class="one"><b>v4 全球版引擎已双段验证（N=5+1）</b>：纪律搬到 VT/QQQ/GLD/SHV，train 选定 V4.1（波动目标 6%），holdout（2021-今，含 2022 股债双杀）6.4% / 回撤 -3.5% / 夏普 1.64，与现有组合风险调整后打平。<b>50/50 混合：7.1% / 回撤 -3.7%，比两者单跑都浅</b>（相关性 0.57）。香港身份的价值在汇率分散：核心腿 CNY + 卫星腿 USD，VT 含 40% 非美敞口。</div>
   <table style="margin-top:10px"><tr><th>配置</th><th>年化</th><th>最大回撤</th><th>夏普</th></tr>
@@ -96,7 +114,7 @@ footer { color: #aaa; font-size: 12px; margin-top: 24px; text-align: center; }
     <tr><td><b>GLD</b> 黄金</td><td>GLD · SPDR Gold Shares · NYSE Arca · 费率0.40%</td><td>2840.HK SPDR金ETF（港币柜）/ 2841.HK（美元柜）</td><td>跟踪伦敦金，四腿中费率最高</td></tr>
     <tr><td><b>SHV</b> 短债≈现金</td><td>SHV · iShares 0-1年美债ETF · NYSE Arca · 费率0.15%</td><td>无对应ETF</td><td>同功能替代：SGOV（0-3月国库券，费率更低）</td></tr></table>
   <div class="note">风险溢价结论：债券腿以短债/现金（SHV）承接而非长债（期限溢价薄且 B 腿必须无风险）；股票风险溢价靠 VT+QQQ 全球分散；大宗长期负 carry 不做战略配置。升级生产信号前需实盘影子跟踪 ≥1 个月（与 v3.5 上线同流程）。</div>
-  <div class="one" style="margin-top:10px"><b>v3.6 夏普优先候选（苏斌老师意见，2026-10-21，尚未上线）</b>：创业板ETF/红利ETF 120日动量月度轮动替换中证500腿 + 回撤刹车放宽 6/10/15（原 3/5/7）+ 债券上帽 70%（超出持现金）。N=12 两阶段搜索，train 选参 / holdout 只验证：holdout 年化 <b>11.2%</b> / 回撤 <b>-4.6%</b> / 夏普 <b>2.04</b>，对照现生产 v3.5 为 10.7%/-4.1%/2.07——年化 +0.5pp、回撤放宽 0.5pp，夏普在噪声内打平，兑现"放宽回撤换收益"。波动目标提到 10%/12% 在 holdout 全面恶化，已拒绝；搜索引擎已经过与生产引擎逐日核对（最大差异 0.0）。上线前需 ≥1 个月影子跟踪。</div>
+  <div class="note" style="margin-top:10px">v3.6 夏普优先候选（创业板/红利轮动，人民币账户）的回测对照见上方专卡；与 v4.1 同属影子验证阶段，均未上线。</div>
 </div>
 
 <div class="card">
@@ -121,7 +139,7 @@ footer { color: #aaa; font-size: 12px; margin-top: 24px; text-align: center; }
 </div>
 
 <div class="disc">免责声明：本页面为量化规则的个人研究演示，所有信号为历史数据回测的规则模拟，<b>不构成任何投资建议</b>；回测不代表未来表现，市场有风险，投资需谨慎。</div>
-<footer>由 Kimi Work 自动生成 · 生成于 2026-10-21 16:23 · 策略 v3.5</footer>
+<footer>由 Kimi Work 自动生成 · 生成于 2026-10-21 16:28 · 策略 v3.5</footer>
 </div>
 
 </body>
